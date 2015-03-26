@@ -1,0 +1,148 @@
+.modal {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 11;
+	position: fixed;
+	outline: none !important;
+	overflow: auto;
+	display: none;
+
+	&.is-visible {
+		display: block;
+	}
+}
+
+.modal-wrap {
+	text-align: center;
+  	display: table;
+  	width: 100%;
+  	height: 100%;
+  	box-sizing: border-box;
+}
+
+.modal-inner-wrap {
+	display: table-cell;
+  	vertical-align: middle;
+}
+
+.modal-content {
+	max-width: 100%;
+  	position: relative;
+  	display: inline-block;
+  	vertical-align: middle;
+  	margin: 0 auto;
+  	text-align: left;
+  	z-index: 12;
+  	background-color: #000;
+  	padding: 2.5em 2em 2em 2em;
+  	box-sizing: border-box;
+  	box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
+}
+
+.modal-image {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.modal-backdrop {
+	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  	z-index: 10;
+  	overflow: auto;
+  	position: fixed;
+  	background: #000;
+  	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  	opacity: 0.8;
+  	cursor: zoom-out;
+}
+
+.modal-navLink  {
+	display: block;
+	text-decoration: none;
+	position: absolute;
+	margin-top: -.5em;
+	top: 50%;
+	font-size: 2em;
+	color: #ccc;
+	line-height: 1;
+	width: .5em;
+
+	span {
+		display: inline-block;
+		text-indent: -9999em;
+		width: 0;
+		height: 0;
+		overflow: hidden;
+	}
+
+	&:hover {
+		color: #f0f0f0;
+	}
+
+	&:active {
+		color: #fff;
+	}
+
+	&.is-disabled {
+		display: none;
+	}
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		margin-top: -.5em;
+		border-style: solid;
+		width: 0;
+		height: 0;
+	}
+}
+
+.modal-prevLink {
+	left: .25em;
+
+	&:before {		
+		border-width: .5em .5em .5em 0;
+		border-color: transparent;
+		border-right-color: inherit;	
+	}
+}
+
+.modal-nextLink {
+	right: .25em;
+
+	&:before {		
+		border-width: .5em 0 .5em .5em;
+		border-color: transparent;
+		border-left-color: inherit;	
+	}
+}
+
+.modal-closeButton {
+	background-color: transparent;
+	border: 0;	
+	color: #fff;
+	position: absolute;
+	right: 2em;
+	top: 1em;
+	padding: 0;
+	cursor: pointer;
+	font-size: 1em;
+	color: #ccc;
+
+	&:hover {
+		color: #e6e6e6;
+	}
+
+	&:active {
+		color: #fff;
+	}
+
+}

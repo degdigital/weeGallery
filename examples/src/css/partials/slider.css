@@ -1,0 +1,80 @@
+.slider { 
+	overflow: hidden;
+	position: relative;
+	padding: 0 .9375em;
+	
+}
+
+.sliderViewport {
+	position: relative;
+	overflow: hidden;
+}
+
+.sliderNavButton {
+	position: absolute;
+	border: 0;
+	background-color: #069;
+	color: white;
+	padding: .25em .125em;
+	height: 100%;
+	top: 0;
+	box-sizing: border-box;
+	font-size: 1em;
+	cursor: pointer;
+	width: .875em;
+	outline: none;
+
+	&.is-disabled {
+		cursor: default;
+		background-color: #ccc;
+
+		&:hover, &:active {
+			background-color: #ccc;
+		}
+	}
+
+	span {
+		display: inline-block;
+		text-indent: -9999em;
+		width: 0;
+		height: 0;
+	}
+
+	&:hover {
+		background-color: #005880;
+	}
+
+	&:active {
+		background-color: #046;
+	}
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0.1875em;
+		top: 50%;
+		margin-top: -.5em;
+		border-style: solid;
+	}
+}
+
+.sliderPrevButton {
+	left: 0;
+	border-radius: .25em 0 0 .25em;
+
+	&:before {
+		border-width: .5em .5em .5em 0;
+		border-color: transparent #fff transparent transparent;		
+	}
+}
+
+.sliderNextButton {
+	right: 0;
+	border-radius: 0 .25em .25em 0;
+
+	&:before {
+		border-width: .5em 0 .5em .5em;
+		border-color: transparent transparent transparent #fff;	
+	}
+}

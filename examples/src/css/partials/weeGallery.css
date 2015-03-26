@@ -1,0 +1,55 @@
+.weeGallery {
+	max-width: 20em;
+	overflow: hidden;
+	margin: 0 auto;
+	img {
+		max-width: 100%;
+		height: auto;
+		display: block;
+	}
+}
+
+.weeGallery-previewLink {
+	cursor: zoom-in;
+}
+
+.weeGallery-previewImage {
+	border: 1px solid #ccc;
+	padding: .125em;
+	margin: 0 auto .5em auto;
+	box-sizing: border-box;
+}
+
+.weeGallery-thumbnails {
+	overflow: hidden;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.weeGallery-thumbnailItem {
+	float: left;
+	width: 44px;
+	padding: 0;
+	padding: 0 1px 0 0;
+	opacity: .75;
+	box-sizing: border-box;
+
+	&:last-child {
+		padding-right: 0;
+	}
+
+	&.is-active, &:hover {
+		opacity: 1;
+	}
+}
+
+.weeGallery-thumbnailLink {
+	display: block;
+}
+
+.weeGallery-thumbnailImage {
+	display: block;
+	width: 43px;
+	border: 0;
+}
