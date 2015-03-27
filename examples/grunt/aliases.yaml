@@ -1,0 +1,4 @@
+default:   
+    - sass_globbing
+    - postcss
+    - 'uglify'

@@ -1,5 +1,5 @@
 module.exports = {
-    main: {
+    dev: {
     	options: {
             enclose: true
     	},
@@ -14,18 +14,5 @@ module.exports = {
 
             ]
         }
-    },
-    examples: {
-        options: {
-            enclose: true
-        },
-        files: {
-            '<%= paths.examples.dist.js %>/jsPolyfills.js': [           
-                '<%= paths.examples.src.js %>/jsPolyfills.js'
-            ],
-            '<%= paths.examples.dist.js %>/global.js': [           
-                '<%= paths.examples.src.js %>/global.js'
-            ]
-        }        
     }
 };

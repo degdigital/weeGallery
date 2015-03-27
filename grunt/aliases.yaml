@@ -1,7 +1,2 @@
 default:   
-    - 'uglify:main'
-
-examples:
-    - sass_globbing
-    - postcss
-    - 'uglify:examples'
+    - 'uglify'

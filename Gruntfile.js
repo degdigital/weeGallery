@@ -2,17 +2,7 @@ module.exports = function(grunt) {
 
     var paths = {
         src:  'src',        
-        dist: 'dist',
-        examples: {
-            src: {
-                js: 'examples/src/js',
-                css: 'examples/src/css'
-            },
-            dist: {
-                js: 'examples/js',
-                css: 'examples/css'
-            }
-        }
+        dist: 'dist'       
     };
 
     require('load-grunt-config')(grunt, {

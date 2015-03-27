@@ -13,9 +13,9 @@ module.exports = {
 	    files: [
 	        {
 	            expand: true,
-	            cwd: "<%= paths.examples.src.css %>",
+	            cwd: "<%= paths.src.css %>",
 	            src: ['*.css'],
-	            dest: "<%= paths.examples.dist.css %>",
+	            dest: "<%= paths.dist.css %>",
 	            ext: '.css'
 	        }
 	    ]
