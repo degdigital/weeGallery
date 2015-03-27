@@ -20,3 +20,6 @@ var weeGalleryInstance = weeGallery(galleryEl, {});
 
 ## Requirements & Browser Support
 WeeGallery has no framework or library requirements. It is supported on all modern browsers and IE 9 and above. IE 8 support requires polyfills for the following ES5 features: [classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList), [addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener), [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach), and [map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) 
+
+## Demo
+Want to see this bad boy in action? Here you go: [http://degdigital.github.io/weeGallery/](http://degdigital.github.io/weeGallery/)
