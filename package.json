@@ -1,16 +1,21 @@
 {
-  "name": "weeGallery",
+  "name": "weeGallery-demo",
   "version": "1.0.0",
-  "description": "Image gallery widget with Flickr integration", 
+  "description": "Demo of the weeGallery plugin", 
   "author": "Ryan Heap",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/degdigital/weeGallery"
-  },
   "devDependencies": {
     "grunt": "^0.4.2",    
     "grunt-contrib-watch": "^0.5.3",      
     "load-grunt-config": "^0.7.0",
-    "grunt-contrib-uglify": "^0.8.0"
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-uglify": "^0.8.0",
+    "grunt-postcss": "^0.3.0",
+    "autoprefixer-core": "^5.1.7",
+    "csswring": "^3.0.1",
+    "postcss-import": "^5.0.3",
+    "postcss-custom-properties": "^3.0.1",
+    "postcss-nested": "^0.2.2",
+    "postcss-mixins": "^0.1.1",
+    "grunt-sass-globbing": "^1.2.0"
   }
 }
